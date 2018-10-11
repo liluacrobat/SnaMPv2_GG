@@ -7,10 +7,10 @@ git clone https://github.com/vitmy0000/SnaMP.git
 
 ## Download reference database
 
-download gg folder from google drive:
+download 'gg' folder from google drive:
 https://drive.google.com/open?id=1h78qsShihRjxkTZZHpgXWWZUkzH7xay5
 
-put folder gg under the database directory
+put folder 'gg' under the 'database' directory
 
 ## Create environment
 

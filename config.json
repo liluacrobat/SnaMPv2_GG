@@ -1,10 +1,10 @@
 {
     "database":
     {
-        "name": "HOMD",
-        "version": "14.5",
-        "fa_file": "homd.fa",
-        "tax_file": "homd.tax"
+        "name": "gg",
+        "version": "13.8",
+        "fa_file": "gg.fasta",
+        "tax_file": "gg.tax"
     },
     "tool_versions":
     {

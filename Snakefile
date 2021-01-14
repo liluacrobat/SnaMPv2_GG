@@ -98,7 +98,7 @@ rule blast:
         identity = config["parameters"]["blast"]["identity"],
         coverage = config["parameters"]["blast"]["coverage"],
         db_name = config["database"]["name"]
-    shell: 'tools/blast+/{version}/bin/blastn -query {input.query} -task megablast -db {params.db_name} -perc_identity {params.identity} -qcov_hsp_perc {params.coverage} -evalue 1e-6 -outfmt "7 qacc sacc qstart qend sstart send length pident qcovhsp qcovs" -out {output}'
+    shell: 'tools/blast+/{version}/bin/blastn -query {input.query} -task megablast -db {params.db_name} -max_target_seqs 5000 -perc_identity {params.identity} -qcov_hsp_perc {params.coverage} -evalue 1e-6 -outfmt "7 qacc sacc qstart qend sstart send length pident qcovhsp qcovs" -out {output}'
 
 rule blast_parse:
     input: "blast{sample_id}.txt"

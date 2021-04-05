@@ -23,6 +23,7 @@ conda create -c bioconda -m -p pyenvs/py35-snakemake python=3.5 pandas snakemake
 
 ```bash
 module python/py38-anaconda-2020.11
+eval "$(/util/common/python/py38/anaconda-2020.11/bin/conda shell.bash hook)"
 source activate pyenvs/py35-snakemake
 ```
 

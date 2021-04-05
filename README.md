@@ -15,14 +15,14 @@ put folder 'gg' under the 'database' directory
 ## Create environment
 
 ```bash
-module load python/anaconda2-4.2.0
+module python/py38-anaconda-2020.11
 conda create -c bioconda -m -p pyenvs/py35-snakemake python=3.5 pandas snakemake
 ```
 
 ## Load environment
 
 ```bash
-module load python/anaconda2-4.2.0
+module python/py38-anaconda-2020.11
 source activate pyenvs/py35-snakemake
 ```
 
